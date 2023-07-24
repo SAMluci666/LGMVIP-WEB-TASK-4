@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator (LGMVIP)</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Calculator WebApp</h1>
+        </div>
+        <main class="primaryColor">
+            <form id="calculatorform">
+            <div class="screen">
+                    <input type="text" name="screen" id="calcScreen" placeholder="">
+            </div>
+            <div class="buttonContainer">
+                <div class="buttons" id="firstRow">
+                    <input type="button" id="/" class="operator" value=" / " onclick="valuebutton(this)"/>
+                    <input type="button" id="*" class="operator" value=" * " onclick="valuebutton()"/> 
+                    <input type="button" id="-" class="operator" value=" - " onclick="valuebutton(this)"/> 
+                    <input type="reset" id="AC" class="operator" value="AC"/>
+                    </div>
+                <div class="buttons" id="secondRow">
+                    <input type="button" id="7" value="7" onclick="valuebutton(this)"/>
+                    <input type="button" id="8" value="8" onclick="valuebutton(this)"/>
+                    <input type="button" id="9" value="9" onclick="valuebutton(this)"/>
+                    <input type="button" id="+" value=" + " class="operator" onclick="valuebutton(this)"/>
+                </div>
+                <div class="buttons" id="thirdRow">
+                    <input type="button" id="4" value="4" onclick="valuebutton(this)"/> 
+                    <input type="button" id="5" value="5" onclick="valuebutton(this)"/>
+                    <input type="button" id="6" value="6" onclick="valuebutton(this)"/>
+                    <input type="button" id="=" value=" = " class="operator" onclick="calculate()"/>
+                </div>
+                <div class="buttons" id="fourthRow">
+                    <input type="button" id="3" value="3" onclick="valuebutton(this)"/>
+                    <input type="button" id="2" value="2" onclick="valuebutton(this)"/>
+                    <input type="button" id="1" value="1" onclick="valuebutton(this)"/>
+                    <input type="button" id="0" value="0" onclick="valuebutton(this)"/>
+                </div>
+            </div>
+        </form>
+        </main>
+    </div>
+    <script>
+        function valuebutton(e) 
+        {
+            calculatorform.screen.value += e.value; 
+        }
+        function calculate() {
+            calculatorform.screen.value = eval(calculatorform.screen.value);
+        }
+    </script>
+</body>
+</html>

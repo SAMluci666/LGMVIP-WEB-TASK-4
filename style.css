@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    background: linear-gradient(138deg, black, blue, red);
+    width: 100%;
+    height: 745px;
+    margin: 0px;
+
+}
+.heading{
+    padding: 5px;
+    margin: 0px 5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px darkcyan, 10px 4px 5px darkblue, 10px 5px 20px rgb(206, 250, 255);
+
+}
+main{
+    /* border: 2px solid black; */
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+    margin: 10px  auto;
+    background-color: rgb(53, 49, 49);
+    box-shadow: 15px 10px 10px 4px;
+    border-radius: 10px;
+}
+.screen{
+    width: 100%;
+    height: 110px;
+    /* border: 2px solid black; */
+    /* margin: 10px; */
+    border-radius: 10px;
+    
+}
+#calcScreen{
+    width: 485px;
+    height: 94px;
+    padding: 5px;
+    margin: 1px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+.buttonContainer{
+margin: 5px -1px;
+width: 100%;
+height: 375px;
+/* border: 2px solid black; */
+}
+input {
+    /* border: 3px groove ; */
+    /* padding: 20px; */
+    height: 84px;
+    width: 112px;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin: 5px;
+    box-shadow: 5px 5px 2px inset black, 6px 6px 6px rgb(53, 49, 49) inset;
+    cursor: pointer;
+}
+input:hover{
+    background-color: gray;
+    color: gold;
+}
+#calcScreen:hover{
+    background-color: white;
+    color: gold;
+}
+.reset{
+    border: 2px solid black;
+    padding: 20px;
+    height: 84px;
+    width: 112px;
+    font-size: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    background-color: violet;
+    box-shadow: 5px 5px inset black;
+    font-family: sans-serif;
+    color: maroon;
+    font-weight: bold;
+}
+.operator{
+    color: gold;
+    background-color: rgb(156, 8, 8);
+}
+.operator:hover{
+    color: black;
+    background-color: gray;
+}
